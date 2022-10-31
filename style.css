@@ -1,0 +1,71 @@
+body{
+    background: repeating-linear-gradient(#333333 , #333333  );
+}
+.ligtmode{
+    background-color: rgb(192, 77, 77);
+}
+.darkmode{
+    background-color: black;
+}
+h1{
+    color: gold ;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    color: gold;
+    text-align: center;
+}
+.Button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Button-1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-top: 180px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.light{
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: white;
+    color: black;
+}
+.Button-2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: black;
+    margin-top: 180px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.dark{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.lamp{
+    margin-top: 200px;
+}

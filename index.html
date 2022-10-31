@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function light() {
+            document.getElementsByClassName(".light").className = "light lightmode";
+
+        }
+
+        function dark() {
+            document.getElementsByClassName(".dark").className = "dark darkmode";
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <h1> <img src="./floor-lamp.png" width="100px" alt=""> HAPPY DIWALI <img src="./floor-lamp.png" width="100px"
+                alt=""></h1>
+        <h2>Let the diwali burn all your bad times <br> and enter you in good times</h2>
+        <div class="Button">
+            <div class="Button-1"><button class="light" onclick="light()">LIGHT</button></div>
+
+            <img src="./lamp.png" class="lamp" width="150px" alt="">
+            <div class="Button-2"><button class="dark" onclick="dark()">DARK</button></div>
+        </div>
+    </section>
+</body>
+
+</html>
