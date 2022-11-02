@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +7,31 @@
     <title>Happy Diwali</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function light() {
-            document.getElementsByClassName(".light").className = "light lightmode";
+        function light(){
+        document.getElementById("light").className = "light lightmode" ;
+        document.getElementById("dark").className = "dark" ;
 
+        document.querySelector(".card").className = "card lightmode";
+        document.querySelector("body").className = "lightmode";
         }
+        function dark(){
+        document.getElementById("dark").className =" dark darkmode";
+        document.getElementById("light").className ="light";
 
-        function dark() {
-            document.getElementsByClassName(".dark").className = "dark darkmode";
+        document.querySelector(".card").className = "card darkmode";
+        document.querySelector("body").className = "darkmode"
         }
     </script>
 </head>
-
 <body>
-    <section>
-        <h1> <img src="./floor-lamp.png" width="100px" alt=""> HAPPY DIWALI <img src="./floor-lamp.png" width="100px"
-                alt=""></h1>
+    <section class="card">
+        <h1> <img src="./floor-lamp.png" width="100px" alt=""> HAPPY DIWALI <img src="./floor-lamp.png" width="100px" alt=""></h1>
         <h2>Let the diwali burn all your bad times <br> and enter you in good times</h2>
         <div class="Button">
-            <div class="Button-1"><button class="light" onclick="light()">LIGHT</button></div>
-
+            <button class="light" id="light" onclick="light()">LIGHT</button>
             <img src="./lamp.png" class="lamp" width="150px" alt="">
-            <div class="Button-2"><button class="dark" onclick="dark()">DARK</button></div>
+            <button class="dark" id="dark" onclick="dark()">DARK</button>
         </div>
     </section>
 </body>
-
 </html>
